@@ -1,0 +1,11 @@
+framework:
+    messenger:
+        failure_transport: failed
+
+        transports:
+            # https://symfony.com/doc/current/messenger.html#transport-configuration
+             async: '%env(MESSENGER_TRANSPORT_DSN)%'
+             failed: '%env(MESSENGER_TRANSPORT_FAILED_DSN)%'
+
+        routing:
+             'App\Message\CreateRevisionMessage': async

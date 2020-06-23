@@ -1,0 +1,6 @@
+App\Entity\Revision:
+  revision_{1..5}:
+    entityClass: 'App\Entity\Question'
+    entityid: <numberBetween(1,5)>
+    entityUpdateDate: <datetimeBetween('-1 minute', 'now')>
+    updatedContent: {"title":["Old Title","New Title"], "promoted":[false,true]}

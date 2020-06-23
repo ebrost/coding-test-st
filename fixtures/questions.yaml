@@ -1,0 +1,5 @@
+App\Entity\Question:
+  question_{1..5}:
+    title: <sentence(4)>
+    status: <randomElement(<(\App\Entity\Question::STATUS)>)>
+    promoted: <boolean(50)>

@@ -1,0 +1,5 @@
+App\Entity\Answer:
+  answer_{1..20}:
+    channel: <randomElement(<(\App\Entity\Answer::CHANNELS)>)>
+    body: <text()>
+    question: '@question_*'
